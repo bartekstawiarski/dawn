@@ -171,7 +171,7 @@ class FacetFiltersForm extends HTMLElement {
       if (isShowingMore) {
         sourceWrapElement
           .querySelectorAll('.facets__item.hidden')
-          .forEach((x) => x.classList.replace('hidden', 'show-more-item'));
+          .forEach((hiddenItem) => hiddenItem.classList.replace('hidden', 'show-more-item'));
       }
 
       targetWrapElement.outerHTML = sourceWrapElement.outerHTML;
